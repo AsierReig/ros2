@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-        	'object_detection = py_pubsub.subscriber_member_function:main',
+        	'object_detection_yolo = camera_detection.subscriber_member_function:main',
         ],
     },
 )
