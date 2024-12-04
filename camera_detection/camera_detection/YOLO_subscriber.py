@@ -5,7 +5,7 @@ import cv2      # Para convertir las imágenes de ROS2 a OpenCV
 from cv_bridge import CvBridge  # Biblioteca para procesar imágenes en Python
 from message_filters import ApproximateTimeSynchronizer, Subscriber # Librería necesaria para sincronizar dos topic's
 from ultralytics import YOLO # Librería modelo detección de objetos
-from interfaces.msg import DetectedObject, DetectedObjects # Mensajes de mi paquete
+from interfaces.msg import DetectedObject, DetectedObjects # type: ignore # Mensajes de mi paquete
 import numpy as np # Librería mmatrices y vectores
 import time # Funciones relacionadas con el tiempo
 
