@@ -15,7 +15,7 @@ wget https://raw.githubusercontent.com/ros2/examples/humble/rclpy/topics/minimal
 ```
 Nos encontraremos un archivo con el nombre ***susbcriber_member_function.py***, el cual podemos renombrar y editar su contenido. En nuestro caso, nos suscribimos a dos topics de la cámara Orbbec Astra, tales como **/camera/color/image_raw** y **/camera/depth/image_raw**, los cuales nos permiten visulaizar las imágenes de la cámara y su profundidad. Una vez suscrito, podemos cargar nuestro modelo YOLO entrenado y pasarle cada imagen de la cámara para que lance el programa y detecte el objeto que queramos. Además, se recoge información sobre la clase, confianza y coordenada 3D de cada objeto detectado en otro topic creado llamado **/detected_objects**, el cual se explicará más adelante.
 
-### 5. Añadir dependencias
+### 3. Añadir dependencias
 En la ruta **ros2_ws/scr/nombre_paquete**, se encuentran los archivos creados previamente para nosotros: ***setup.py, setup.cfg y package.xml***
 Dentro de `*package.xml* debemos completar las tags y añadir las siguientes dependencias que el paquete necesita cuando ejecuta el nodo:
 ```bash
